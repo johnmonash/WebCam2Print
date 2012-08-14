@@ -1,0 +1,2 @@
+NAME=Full Name
+IDCODE=ID Code
