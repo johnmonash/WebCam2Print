@@ -15,6 +15,27 @@
 #    "REPLACEPICTURE.jpg"
 # *REPLACEPICTURE.jpg - placeholder picture for template.
 
+__author__ = "Victor Rajewski"
+__copyright__ = "Copyright 2012, Victor Rajewski"
+__credits__ = ["Victor Rajewski"]
+__license__ = "GPL"
+__version__ = "0.8"
+__email__ = "askvictor@gmail.com"
+'''
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
 import Tkinter
 import Image,ImageOps,ImageTk
 import VideoCapture
@@ -79,5 +100,9 @@ class WebCam:
 
 
 root=Tkinter.Tk()
+
+#this can be used to change the tkinter icon
+#root.tk.call('wm','iconbitmap',root._w, '-default', 'Webcam.ico')
+
 myapp=WebCam(root)
 root.mainloop()
